@@ -9,22 +9,24 @@
 <body>
     <div class="box">
         <h2>Login</h2>
-        <div class="input-box">
-            <label>账号</label>
-            <input type="text">
-        </div>
-        <div class="input-box">
-            <label>密码</label>
-            <input type="password">
-        </div>
-        <div class="btn-box">
-            <a href="#">忘记密码</a>
-            <div>
-                <button type="submit">登录</button>
-                <button><a href="register.html" style="text-decoration: none; color: white;" >注册</a></button>
-            </div> 
-        </div>
+        <form id="loginForm" action="login" method="post">
+            <div class="input-box">
+                <label>账号</label>
+                <input type="text" name="userName">
+            </div>
+            <div class="input-box">
+                <label>密码</label>
+                <input type="password" name="passWord">
+            </div>
+            <div class="btn-box">
+                <a href="#">忘记密码</a>
+                <div>
+                    <button type="submit">登录</button>
+                    <button><a href="register" id="registerBtn" style="color: white; text-decoration: none;">注册</a></button>
+                </div>
+            </div>
+        </form>
     </div>
+
 </body>
 </html>
-12.
